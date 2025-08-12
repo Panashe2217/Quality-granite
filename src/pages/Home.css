@@ -61,8 +61,8 @@
 
 .cta-button {
   display: inline-block;
-  background: var(--accent);
-  color: white;
+  background: #000000; /* Pure black background */
+  color: #ffffff; /* Pure white text */
   padding: 0.8rem 2rem;
   border-radius: 50px;
   text-decoration: none;
@@ -77,8 +77,8 @@
 
 .cta-button.secondary {
   display: inline-block;
-  background: var(--accent);
-  color: white;
+  background: #000000; /* Pure black background */
+  color: #ffffff; /* Pure white text */
 
 }
 
