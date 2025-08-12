@@ -50,7 +50,7 @@ const Home = () => {
       <section className="about-teaser">
         <div className="container">
           <h2 className="section-title">Family-Owned Stone Masters</h2>
-          <p className="section-subtitle">Three generations of granite expertise since 2015</p>
+          <p className="section-subtitle">A generation of granite expertise since 2015</p>
           <div className="cta-wrapper">
             <a href="/about" className="cta-button">Our Story</a>
             <a href="/contact" className="cta-button secondary">Get a Quote</a>

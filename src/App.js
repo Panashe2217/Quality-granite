@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -14,9 +14,11 @@ import Fireplaces from './pages/Services/Fireplaces';
 import Products from './pages/Products';
 import './App.css';
 
+
 function App() {
   return (
-    <Router>
+        <HashRouter basename="/Quality-granite">
+      
       <Header />
       <main className="main-content">
         <Routes>
@@ -32,7 +34,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </Router>
+     </HashRouter>
   );
 }
 
