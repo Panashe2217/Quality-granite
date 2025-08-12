@@ -10,7 +10,7 @@ const About = () => {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1>Our Stonecraft Legacy</h1>
-          <p>Three generations of granite mastery</p>
+          <p>A generations of granite mastery</p>
         </div>
       </section>
 

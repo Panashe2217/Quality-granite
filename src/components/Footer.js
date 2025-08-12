@@ -42,7 +42,7 @@ const Footer = () => {
             <li>26 Smart Road Athlone</li>
             <li>Gweru City,ZW</li>
             <li>Phone: +263 77 684 8616||+263 713 066 1113</li>
-            <li>Email: qualitygranite@gmai.com</li>
+            <li>Email: qualitygranite@gmail.com</li>
           </ul>
         </div>
 
