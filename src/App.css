@@ -1,0 +1,20 @@
+/* src/App.css */
+body {
+  margin: 0;
+  background: 
+    url('./tombstones/assets/global-bg.jpg') center/cover fixed no-repeat;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Ensures content scrolls over the fixed background */
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+:root {
+  --primary: #2a363b;
+  --accent: #ff847c;
+  --light: #fecea8;
+}
