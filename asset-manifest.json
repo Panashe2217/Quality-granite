@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Quality-granite/static/css/main.f780af5a.css",
-    "main.js": "/Quality-granite/static/js/main.147fcd1e.js",
+    "main.css": "/Quality-granite/static/css/main.c6875c13.css",
+    "main.js": "/Quality-granite/static/js/main.4545c060.js",
     "static/js/453.cadc3ae3.chunk.js": "/Quality-granite/static/js/453.cadc3ae3.chunk.js",
     "static/media/tombstone-2.jpg": "/Quality-granite/static/media/tombstone-2.e2eef007f11caf24eac5.jpg",
     "static/media/tombstone-1.jpg": "/Quality-granite/static/media/tombstone-1.c81bff468475829c7649.jpg",
@@ -23,12 +23,12 @@
     "static/media/tombstone-17.jpg": "/Quality-granite/static/media/tombstone-17.b183300fb06f56887ad5.jpg",
     "static/media/global-bg.jpg": "/Quality-granite/static/media/global-bg.7d793643507001a5ded0.jpg",
     "index.html": "/Quality-granite/index.html",
-    "main.f780af5a.css.map": "/Quality-granite/static/css/main.f780af5a.css.map",
-    "main.147fcd1e.js.map": "/Quality-granite/static/js/main.147fcd1e.js.map",
+    "main.c6875c13.css.map": "/Quality-granite/static/css/main.c6875c13.css.map",
+    "main.4545c060.js.map": "/Quality-granite/static/js/main.4545c060.js.map",
     "453.cadc3ae3.chunk.js.map": "/Quality-granite/static/js/453.cadc3ae3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f780af5a.css",
-    "static/js/main.147fcd1e.js"
+    "static/css/main.c6875c13.css",
+    "static/js/main.4545c060.js"
   ]
 }
