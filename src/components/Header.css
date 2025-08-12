@@ -1,10 +1,10 @@
+/* Base Styles */
 .main-header {
-  background: rgba(42, 41, 41, 0.584);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: rgba(42, 41, 41, 0.9);
+  padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(8px); /* Adds modern glass effect */
 }
 
 .header-container {
@@ -13,79 +13,96 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
-  flex-wrap: wrap; /* Allows items to stack on mobile */
 }
+
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.25rem, 4vw, 1.5rem); /* Responsive font size */
-  font-weight: 700;
-  color: #f9f9fc;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 0.5rem 0; /* Better touch area */
+  z-index: 10;
 }
-.main-nav {
+
+/* Hamburger Button */
+.hamburger {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 2rem;
+  height: 0.25rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(0.4rem, 0.4rem);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(0.4rem, -0.4rem);
+}
+
+/* Navigation */
+.main-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(42, 41, 41, 0.95);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 5;
+}
+
+.main-nav.show {
+  display: flex;
 }
 
 .main-nav a {
-  color: #0b0b0b;
+  color: white;
   text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  border-radius: 4px; /* Better touch feedback */
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .header-container {
-    padding: 0.75rem;
-  }
-
-  .menu-toggle {
-    display: block; /* Show hamburger menu */
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
   }
 
   .main-nav {
-    display: none; /* Hide by default */
-    width: 100%;
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .main-nav.active {
-    display: flex; /* Show when menu is toggled */
+    display: flex;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    background: transparent;
+    gap: 1.5rem;
   }
 
   .main-nav a {
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
     font-size: 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
-
-  .logo {
-    order: -1; /* Ensures logo stays left */
-  }
-}
-
-/* Active/hover states */
-.main-nav a:hover,
-.main-nav a:active,
-.main-nav a:focus {
-  color: var(--accent);
-  background: rgba(255,255,255,0.1);
-  font-weight: 800;
-  outline: none; /* Remove default focus outline */
-}
-
-/* Better focus visibility for accessibility */
-.main-nav a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
 }

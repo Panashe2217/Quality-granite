@@ -8,19 +8,27 @@ const Header = () => {
   return (
     <header className="main-header">
       <div className="header-container">
-        <Link to="/" className="logo">Quality Granite(PVT)(LTD)</Link>
+        <Link to="/" className="logo" onClick={() => setMobileMenuOpen(false)}>
+          Quality Granite(PVT)(LTD)
+        </Link>
         
+        {/* Hamburger Button */}
         <button 
-          className="mobile-menu-toggle"
+          className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Menu"
         >
-          
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <nav className={`main-nav ${mobileMenuOpen ? 'open' : ''}`}>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/contact">Contact</Link>
+        
+        {/* Navigation */}
+        <nav className={`main-nav ${mobileMenuOpen ? 'show' : ''}`}>
+          <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+          <Link to="/products" onClick={() => setMobileMenuOpen(false)}>Products</Link>
+          <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
         </nav>
       </div>
     </header>
