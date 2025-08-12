@@ -17,8 +17,8 @@
     "yet-another-react-lightbox": "^3.25.0"
   },
   "scripts": {
-      "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-"homepage": "https://yourusername.github.io/your-repo-name"
+    "homepage": "https://Panashe2217.github.io/Quality-granite"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
